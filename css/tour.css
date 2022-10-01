@@ -87,85 +87,61 @@ nav ul li a:hover {
 }
 
 .hero {
-    background-color: blue;
-    background-image: url("../Fashion-Images/hero.jpg");
     width: 100%;
-    height: 80vw;
-    background-position: center;
-    background-repeat: no-repeat;
+    height: 35vw;
+    background-color: aqua;
+    background-image: url(../Fashion-Images/tour.jpg);
     background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    margin-bottom: 10px;
 }
 
-h1 {
-    text-align: center;
-    font-size: 3vw;
-    padding-top: 2vw;
-    font-size: clamp(25px, 5vw, 80px);
-    margin: 0;
-}
-
-.gallery {
-    background-color: black;
+.tour-dates-box {
+    width: 100%;
+    height: 10vw;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 20px 10px;
-    max-width: 1400px;
-    margin: 0 auto;
-    gap: 35px; 
-    object-fit: cover;
 }
 
-.gallery::after {
-    content: "";
-    width: 330px;
+.tour-dates {
+    font-size: clamp(30px, 5vw, 80px);
+    color: rgb(103, 196, 243);
+    text-shadow: 3px 3px white;
 }
 
-.gallery img {
-    width: 360px;
-    height: 360px;
-    border: 1px solid black;
-    border-radius: 10px;
-    object-fit: cover;
-    transition: width 1s, height 1s;
-    transition-timing-function: ease-out;
+.dates {
+    float: left;
+    width: 25%;
 }
 
-
-
-.gallery img:hover {
-    width: 380px;
-    height: 380px;
-    border: 4px solid rgb(103, 196, 243);
-    border-radius: 10px;
+.dates ul {
+    color: rgb(103, 196, 243);
+    font-size: clamp(13px, 3vw, 50px);
+    text-align: right;
+    padding-left: 2vw;
 }
 
-h2 {
-    text-align: center;
-    background-color: white;
-    border: 4px solid rgb(103, 196, 243);
-    border-radius: 10px;
-    font-weight: bold;
+.dates ul li {
+    list-style: none;
 }
 
-.gallery div ul {
+.venues {
+    float: left;
+    width: 75%;
+}
+
+.venues ul {
+    color: white;
+    font-size: clamp(13px, 3vw, 50px);
     text-align: left;
-    background-color: white;
-    border: 4px solid rgb(103, 196, 243);
-    border-radius: 10px;
-    font-size: 19px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-right: 7px;
+    padding-left: 3vw;
 }
 
-.gallery div ul li {
-    width: 300px;
-    font-weight: 700;
+.venues ul li {
+    list-style: none;
 }
-
 
 .center {
     display: block;
